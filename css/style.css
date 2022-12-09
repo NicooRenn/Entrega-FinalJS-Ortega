@@ -1,0 +1,65 @@
+header {
+    background-image: url(../assets/img/fondoladrillos.jpg);
+    background-color: #000000; }
+  
+  footer h5 {
+    font-family: Georgia, serif;
+    font-weight: bold; }
+  
+  footer li, footer a {
+    font-size: 20px; }
+  
+  h1 {
+    font-size: 35px;
+    color: #9b00ff;
+    background-color: #ffffff; }
+  
+  h2 {
+    font-size: 30px;
+    color: #393939;
+    background-color: #ffffff; }
+  
+  input {
+    margin: auto;
+    display: block; }
+  
+  h4 {
+    font-size: 30px;
+    color: black;
+    background-color: #ffffff;
+    font-family: 'Courier New', monospace;
+    font-weight: bold; }
+  
+  .flexColumn {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px; }
+  
+  .carousel {
+    margin: 0 auto;
+    max-width: 70%;
+    margin-bottom: 35px; }
+  
+  .primaryButton {
+    padding: 5px;
+    border: 3px solid #9b00ff;
+    border-radius: 4px;
+    color: black;
+    margin: 0 auto; }
+  
+  .primaryButton {
+    color: #393939; }
+  
+  .link-instagram {
+    color: white;
+    background-color: #fd1d1d; }
+  
+  .link-twitch {
+    color: white;
+    background-color: #bf94ff; }
+  
+  .link-discord {
+    color: white;
+    background-color: #5865f2; }
+  
