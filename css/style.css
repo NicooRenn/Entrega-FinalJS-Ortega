@@ -1,65 +1,116 @@
-header {
-    background-image: url(../assets/img/fondoladrillos.jpg);
-    background-color: #000000; }
-  
-  footer h5 {
-    font-family: Georgia, serif;
-    font-weight: bold; }
-  
-  footer li, footer a {
-    font-size: 20px; }
-  
-  h1 {
-    font-size: 35px;
-    color: #9b00ff;
-    background-color: #ffffff; }
-  
-  h2 {
-    font-size: 30px;
-    color: #393939;
-    background-color: #ffffff; }
-  
-  input {
-    margin: auto;
-    display: block; }
-  
-  h4 {
-    font-size: 30px;
-    color: black;
-    background-color: #ffffff;
-    font-family: 'Courier New', monospace;
-    font-weight: bold; }
-  
-  .flexColumn {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 15px; }
-  
-  .carousel {
-    margin: 0 auto;
-    max-width: 70%;
-    margin-bottom: 35px; }
-  
-  .primaryButton {
-    padding: 5px;
-    border: 3px solid #9b00ff;
-    border-radius: 4px;
-    color: black;
-    margin: 0 auto; }
-  
-  .primaryButton {
-    color: #393939; }
-  
-  .link-instagram {
-    color: white;
-    background-color: #fd1d1d; }
-  
-  .link-twitch {
-    color: white;
-    background-color: #bf94ff; }
-  
-  .link-discord {
-    color: white;
-    background-color: #5865f2; }
-  
+* {
+  font-family: 'sans-serif', arial;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  background-color: #224870;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.calculadora {
+  display: grid;
+  grid-template-columns: repeat(4, 75px);
+  grid-template-rows: 160px repeat(5, 75px);
+  background-color: #181818;
+  padding: 15px;
+  border-radius: 32px;
+  box-shadow: 15px 10px 0px 5px #0000003f;
+}
+
+button {
+  cursor: pointer;
+  margin: 5px;
+  padding: 0;
+  border-radius: 32px;
+  font-size: 1.5em;
+  border: none;
+  background-color: #383838;
+  box-shadow: 5px 5px 10px -3px #ff7300fa, -5px -5px 15px 3px #5801011f;
+}
+
+button:active {
+  background-color: #0057fa;
+}
+
+button:focus {
+  outline: none;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.display {
+  grid-column: 1 / -1;
+  padding: 16px;
+  display: flex;
+  margin: 10px 10px 20px;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: #a3a3a3;
+  border-radius: 32px;
+  text-align: right;
+  justify-content: space-between;
+  word-break: break-all;
+  box-shadow: 0px 0px 0px 15px #00000033;
+}
+
+#valor-actual {
+  font-size: 1.5em;
+}
+
+#valor-anterior {
+  font-size: 2em;
+}
+
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.popup{
+    background-color: #222222;
+    width: 450px;
+    padding: 30px 40px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none;
+    text-align: center;
+}
+.popup button{
+  display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #fa0202;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+.popup p{
+    font-size: 14px;
+    text-align: justify;
+    margin: 20px 0;
+    line-height: 25px;
+}
+.popup h1{
+  font-size: 40px;
+  text-align: center;
+  margin: 20px 0;
+  line-height: 25px;
+}
